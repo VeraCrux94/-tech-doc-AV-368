@@ -1,208 +1,245 @@
-
-
 #navbar {
-    position: fixed;
-    left: 0;
-    padding: 20px;
-   background: linear-gradient(120deg, #4caf50, #8bc34a);
-    padding: 10px;
-    transition-timing-function: ease-in;
-    scroll-behavior: smooth;
-  /*not right comeback and smooth out
-  justify-content: center;*/
-    top: 5px;
-    text-align: flex-start;
-      font-family: Lucida Console;
-    font-size: 1rem; 
-    margin: 5px;
-    text-decoration: none;
-    box-shadow: 5px 5px 5px lightblue;
-    flex-wrap: wrap;
-    }
+  position: fixed;
+  top: 5px;
+  left: 0;
+  width: 25%;
+  padding: 10px;
+ background: linear-gradient(120deg, #4caf50, #8bc34a);
+   box-shadow: 5px 5px 5px lightblue;
+   font-family: Lucida Console;
+   font-size: 1rem; 
+   max-width: 22rem;
+  z-index: 10;
+  height: 100;
+}
+
+#navbar header {
+    font-size: 1.3em;
+  color: white;
+   border-bottom: solid black;
+  margin-top: 10px;
+    margin-bottom: 7px;
+   }
+
+.nav-link {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+
+
+#navbar a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  border-bottom: solid black;
+  max-width: 20rem;
+  color: black;
+}
+
+
+/*this is the text position or not*/
+/* Chat= main content area. one of these days i might get the termonlalogy(?).*/ 
+#main-doc, .coding-block {
+  margin-left: 25%;
+  margin-top: 60px;
+  padding: 20px;
+   font-size: 19px;
+  line-height: 25px;
+  word-spacing: 8px;
+  min-width: 25rem;
+  max-width: 45rem;
+  width: 75%;
+}
   
-  .nav-link {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    margin-right: 20px;
-  }
-  
-  .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1); 
-  }
-  
-  #navbar header {
-      font-size: 1.3em;
-    color: white;
-      margin-bottom: 7px;
-    text-wrap: wrap;
+  /*
+  text-wrap: wrap; 
+   justify-content: evenly-spaced;
     overflow-wrap: break-word;
-     
-    /*font-weight: bold;*/
-  }
-  
-  #navbar a {
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-    border: solid black;
-    max-width: 20rem;
-    color: black;
-  }
-  
-  
-  /*this is the text position or not*/
-  #main-doc, .coding-block {
-    text-wrap: wrap; 
-     justify-content: evenly-spaced;
-      overflow-wrap: break-word;
-    min-width: 25rem;
-    max-width: 45rem; 
-     font-size: 19px;
-  width: 100vw; 
-    line-height: 25px;
-    word-spacing: 8px; 
-   }
-  
-  .coding-block { 
-    linear-gradient {
-      90deg,
-      gray,
-      white; }
-  }
-  
-  .nav-bar {
-    position: absolute;
-     align-items: flex-left;
-   justify-content: space-evenly;
-    
-    }
-  
-  #main-doc {
-    margin-left: 450px;
-    position: absolute;
-     align-items: flex-left;
-    font-family: Lucida Console;
-  }
-  
-  @media (max-height: 800px) {
-    .main-section {
-        font-size: .9em;
-    }      
-      }
-  
-  li {
-    list-style-type: none;
-     line-height: 30px;
-    word-spacing: 6px; 
-  }
-  
-  /*CSS boiler plate--test 1--*/
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  * {
-    margin: 0;
-  }
-  
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  p, h1, h2, h3, h4, h5, h6, sub-text, .nav-bar, #main-doc {
-      overflow-wrap: break-word;
-  }
-  
-  .nav-bar {
-    font: back;
-  }
-  
-  p {
-    text-wrap: pretty;
-      line-height: 1.95rem; 
-    word-spacing: 5px;
-    intent-text: 5px;
-      padding: 5px;
-    }
-  
-  h1, h2, h3 {
-    text-wrap: pretty;
-    line-height: 2.85rem; 
-   intent-text: 5px;
-    padding: 15px;
-  }
-  
-  h4, h5, h6, .coding-block {
-    text-wrap: pretty;
-      line-height: 2.5rem; 
-    word-spacing: 7px;
-    padding: 10px;
-    intent-text: 15px;
-     }
-  
-  #root, #__next {
-    isolation: isolate;
-  }
-  
-  /*i am lost*/
-  
-  .coding-block {
+  min-width: 25rem;
+  max-width: 45rem; 
+   font-size: 19px;
+width: 100vw; 
+  line-height: 25px;
+  word-spacing: 8px; 
+ }*/
+
+.coding-block { 
     background-color: gray;
-   color: white;
-    max-width: 550px;
-    font-size: .8rem;
-    line-height: 1.6rem; 
-    padding: 5px;  
-    margin: 15px;
-   }
+  color: white;
+  max-width: 550px;
+  font-size: .8rem;
+  line-height: 1.6rem;
+  padding: 5px;
+  margin: 15px;
+}
+
+.nav-bar {
+  position: absolute;
+   align-items: flex-left;
+ justify-content: space-evenly;
   
-  
-  footer {
-      font-famliy: Helveticav !important;
-    font-size: 15px;
-    line-height: 3rem;
-    bottom: 5px;
-   text-align: center;
-     overflow-wrap: break-word;
-    align-content:flex-end;
-    } 
-  
-  /* #navbar {
-    position: fixed;
-    left: 0;
-    padding: 20px;
   }
-  
-  #navbar header {
-      font-size: 1.618em;
-      margin-bottom: 7px;
+
+/*
+#main-doc {
+ display: flex;
+  flex-direction: flex-start;
+  align-itemts: center;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+/*this what id do to make stuff responsove??*/
+@media (max-height: 768px) {
+  #navbar {
+    padding: 10px; 
+    text-align: center;
+  }       
+    }
+
+@media (max-width: 1024px) {
+  #main-doc, .coding-block {
+    max-width: 90%;
   }
-  
-  #navbar a {
-    text-decoration: none;
-    display: block;
-    margin-bottom: 12px;
-  }
-  
+}
+
+
   #main-doc {
-    margin-left: 200px;
+    margin-top: 100px; 
+  
+    padding: 10px;
+    font-size: 16px;
+    
   }
-  
-  @media (max-height: 600px) {
-    .main-section {
-        font-size: .7em;
-    }      
-      }
-    who knows why this worked */
-  
+}
+
+
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 14px;
+  }
+
+  #navbar {
+    font-size: 0.9rem;
+  }
+
+  #main-doc {
+    padding: 5px;
+    text-align:left;
+   left: 55px;
+  }
+}
+
+li {
+  list-style-type: none;
+   line-height: 30px;
+  word-spacing: 6px; 
+}
+
+/*CSS boiler plate--test 1--*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Lucida Console, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6, sub-text, .nav-bar, #main-doc {
+    overflow-wrap: break-word;
+}
+
+.nav-bar {
+  font: back;
+}
+
+p {
+  text-wrap: pretty;
+    line-height: 1.95rem; 
+  word-spacing: 5px;
+  intent-text: 5px;
+    padding: 5px;
+  }
+
+h1, h2, h3 {
+  text-wrap: pretty;
+  line-height: 2.85rem; 
+ intent-text: 5px;
+  padding: 15px;
+}
+
+h4, h5, h6, .coding-block {
+  text-wrap: pretty;
+    line-height: 2.5rem; 
+  word-spacing: 7px;
+  padding: 10px;
+  intent-text: 15px;
+   }
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/*i am lost*/
+
+
+
+footer {
+    font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 3rem;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  } 
+
+/* #navbar {
+  position: fixed;
+  left: 0;
+  padding: 20px;
+}
+
+#navbar header {
+    font-size: 1.618em;
+    margin-bottom: 7px;
+}
+
+#navbar a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 12px;
+}
+
+#main-doc {
+  margin-left: 200px;
+}
+
+@media (max-height: 600px) {
+  .main-section {
+      font-size: .7em;
+  }      
+    }
+*/
